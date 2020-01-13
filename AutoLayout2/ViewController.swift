@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     
     //lets avoid polluting viewDidLoad
     // {} is referred to as closures, or anonymous functions
-    let bearImageView: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named:"bear_first"))
-        //         this enables autolayout for our view
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
+   let bearImageView: UIImageView = {
+       let imageView = UIImageView(image: UIImage(named:"bear_first"))
+       //         this enables autolayout for our view
+       imageView.translatesAutoresizingMaskIntoConstraints = false
+       imageView.contentMode = .scaleAspectFit
+       return imageView
+   }()
     
     let descriptionTextView: UITextView = {
         let textView = UITextView()
